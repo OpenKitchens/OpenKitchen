@@ -23,7 +23,7 @@ store.addMessage({ userHash: "27e98b679e16", userIcon: "https://imgur.com/fjKM9U
 
 store.channelAbout.channelDescription = "ツゥーダァーンッッツ！！"
 store.channelAbout.channelIcon = store.header.channelIcon
-store.channelAbout.channelImageView = "https://iphone-mania.jp/wp-content/uploads/2018/07/MacBook-Pro-WP-1.png"
+store.channelAbout.channelImageView = "https://www.typetalk.com/wp-blog-app/uploads/sites/2/2022/07/shutterstock_1470891287.png"
 store.channelAbout.channelTitle = store.header.channelTitle
 </script>
 
