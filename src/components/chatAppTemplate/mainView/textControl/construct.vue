@@ -2,4 +2,7 @@
 import textControl from "./textControl/textControl.vue"
 import textSendButton from "./textControl/textSendButton.vue"
 </script>
-<template></template>
+<template>
+  <input class="textControl">
+  <button class="textSendButton"></button>
+</template>

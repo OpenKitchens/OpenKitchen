@@ -19,7 +19,8 @@ store.addChannelList({
   ]
 })
 
-store.addMessage({ userHash: "27e98b679e16", userIcon: "https://imgur.com/fjKM9U3", userName: "MOYASI", message: "これはテキストメッセージ" })
+store.addMessage({ userHash: "27e98b679e16", userIcon: "https://i.imgur.com/fjKM9U3_d.webp?maxwidth=760&fidelity=grand", userName: "MOYASI", message: "これはテキストメッセージ" })
+store.addMessage({ userHash: "27e98b679e16", userIcon: "https://i.imgur.com/fjKM9U3_d.webp?maxwidth=760&fidelity=grand", userName: "MOYASI", message: "r-301をカービンっていうやつはヘムロックをバーストARっていうんか？" })
 
 store.channelAbout.channelDescription = "ツゥーダァーンッッツ！！"
 store.channelAbout.channelIcon = store.header.channelIcon
