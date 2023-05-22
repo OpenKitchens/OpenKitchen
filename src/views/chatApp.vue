@@ -10,7 +10,7 @@ store.header.channelTitle = "雑談"
 store.header.channelDescription = "ツゥーダァーンッッツ！！"
 
 store.addChannelList({
-  category: "KitchenApp", 
+  category: "KitchenApp",
   data: [
     {channelTitle: "README", channelIcon: "📄"},
     {channelTitle: "Instance登録", channelIcon: "🥤"},
