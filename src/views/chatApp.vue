@@ -38,7 +38,7 @@ store.addMessage({
 });
 store.addMessage({
   userHash: "27e98b679e16",
-  userIcon: "https://tiniu.openkitchensmoy.repl.co/12.jpeg",
+  userIcon: "https://tiniu.openkitchensmoy.repl.co/2.jpeg",
   userName: "Re0",
   message:
     "普通に考えてフラットラインはVK-47ですよね？同じ質問をみんなで何度もするなんて本当に無知なんだね？笑もっとAPEXの事ちゃんと調べた方がいいよ？何も知らないからR-301の事をカービンとか呼んでるんでしょ？無知って言われて必死に返事してくれてありがとうな？",
@@ -54,7 +54,7 @@ store.addMessage({
   userIcon: "https://tiniu.openkitchensmoy.repl.co/1.jpeg",
   userName: "ﾌﾒｲ",
   message:
-    "フラットラインのことVK-47って呼びますか？？https://pbs.twimg.com/media/Eqza98BUYAA5j07.jpg",
+    "フラットラインのことVK-47って呼びますか？？https://tiniu.openkitchensmoy.repl.co/3.jpeg",
 });
 store.addMessage({
   userHash: "27e98b679e16",
