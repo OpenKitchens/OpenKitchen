@@ -19,8 +19,21 @@ store.addChannelList({
   ]
 })
 
-store.addMessage({ userHash: "27e98b679e16", userIcon: "https://i.imgur.com/fjKM9U3_d.webp?maxwidth=760&fidelity=grand", userName: "MOYASI", message: "これはテキストメッセージ" })
-store.addMessage({ userHash: "27e98b679e16", userIcon: "https://i.imgur.com/fjKM9U3_d.webp?maxwidth=760&fidelity=grand", userName: "MOYASI", message: "r-301をカービンっていうやつはヘムロックをバーストARっていうんか？" })
+store.addChannelList({
+  category: "chatApp", 
+  data: [
+    {channelTitle: "お知らせ", channelIcon: "📢"},
+    {channelTitle: "オフ会", channelIcon: "🍕"},
+    {channelTitle: "雑談", channelIcon: "🎙️"},
+    {channelTitle: "開発日記", channelIcon: "✒️"},
+  ]
+})
+
+store.addMessage({ userHash: "27e98b679e16", userIcon: "https://pbs.twimg.com/profile_images/1182025047751282688/RH5_t7Q1_400x400.jpg", userName: "Re0", message: "R-301の事をカービンって言ってる奴は\nヘムロックをバーストARって言うんか？\nボルトSMGとR-99SMGとオルタネーターSMGは全部SMGって呼ぶんか？\nプラウラーをPDWって呼べるのか？\n\nそもそもカービンの意味を知ってるのか？\nDMRやスカウトの意味もわかるのか？って気持ちになるからカービン呼びは無知" })
+store.addMessage({ userHash: "27e98b679e16", userIcon: "https://pbs.twimg.com/profile_images/1182025047751282688/RH5_t7Q1_400x400.jpg", userName: "Re0", message: "普通に考えてフラットラインはVK-47ですよね？同じ質問をみんなで何度もするなんて本当に無知なんだね？笑もっとAPEXの事ちゃんと調べた方がいいよ？何も知らないからR-301の事をカービンとか呼んでるんでしょ？無知って言われて必死に返事してくれてありがとうな？" })
+store.addMessage({ userHash: "27e98b679e16", userIcon: "https://pbs.twimg.com/profile_images/1657520359430828032/OJCGjE1B_400x400.jpg", userName: "♠️がぶりえる♠️", message: "所詮ゲームだしなぁ\n呼びやすい名でええやん〜" })
+store.addMessage({ userHash: "27e98b679e16", userIcon: "https://pbs.twimg.com/profile_images/1457660321095909376/1tSj8GNk_400x400.jpg", userName: "ﾌﾒｲ", message: "フラットラインのことVK-47って呼びますか？？https://pbs.twimg.com/media/Eqza98BUYAA5j07.jpg" })
+store.addMessage({ userHash: "27e98b679e16", userIcon: "https://pbs.twimg.com/profile_images/1182025047751282688/RH5_t7Q1_400x400.jpg", userName: "Re0", message: "フォーティーセブンって呼んでる" })
 
 store.channelAbout.channelDescription = "ツゥーダァーンッッツ！！"
 store.channelAbout.channelIcon = store.header.channelIcon
@@ -33,3 +46,10 @@ store.channelAbout.channelTitle = store.header.channelTitle
     <chatAppTemplate />
   </main>
 </template>
+
+<style scoped>
+main{
+  width: 100vw;
+  height: 100vh;
+}
+</style>
