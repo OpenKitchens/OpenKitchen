@@ -1,44 +1,73 @@
 <script setup lang="ts">
-import chatAppTemplate from '../components/chatAppTemplate/construct.vue'
-import { usechatAppDataStore } from "../stores/chatAppData"
+import chatAppTemplate from "../components/chatAppTemplate/construct.vue";
+import { usechatAppDataStore } from "../stores/chatAppData";
 
-const store = usechatAppDataStore()
+const store = usechatAppDataStore();
 
-store.header.instanceTitle = "OpenKitchen"
-store.header.channelIcon = "🎙️"
-store.header.channelTitle = "雑談"
-store.header.channelDescription = "ツゥーダァーンッッツ！！"
-
-store.addChannelList({
-  category: "KitchenApp", 
-  data: [
-    {channelTitle: "README", channelIcon: "📄"},
-    {channelTitle: "Instance登録", channelIcon: "🥤"},
-    {channelTitle: "Token認証", channelIcon: "👍"},
-    {channelTitle: "Follow", channelIcon: "🍿"},
-  ]
-})
+store.header.instanceTitle = "OpenKitchen";
+store.header.channelIcon = "🎙️";
+store.header.channelTitle = "雑談";
+store.header.channelDescription = "ツゥーダァーンッッツ！！";
 
 store.addChannelList({
-  category: "chatApp", 
+  category: "KitchenApp",
   data: [
-    {channelTitle: "お知らせ", channelIcon: "📢"},
-    {channelTitle: "オフ会", channelIcon: "🍕"},
-    {channelTitle: "雑談", channelIcon: "🎙️"},
-    {channelTitle: "開発日記", channelIcon: "✒️"},
-  ]
-})
+    { channelTitle: "README", channelIcon: "📄" },
+    { channelTitle: "Instance登録", channelIcon: "🥤" },
+    { channelTitle: "Token認証", channelIcon: "👍" },
+    { channelTitle: "Follow", channelIcon: "🍿" },
+  ],
+});
 
-store.addMessage({ userHash: "27e98b679e16", userIcon: "https://pbs.twimg.com/profile_images/1182025047751282688/RH5_t7Q1_400x400.jpg", userName: "Re0", message: "R-301の事をカービンって言ってる奴は\nヘムロックをバーストARって言うんか？\nボルトSMGとR-99SMGとオルタネーターSMGは全部SMGって呼ぶんか？\nプラウラーをPDWって呼べるのか？\n\nそもそもカービンの意味を知ってるのか？\nDMRやスカウトの意味もわかるのか？って気持ちになるからカービン呼びは無知" })
-store.addMessage({ userHash: "27e98b679e16", userIcon: "https://pbs.twimg.com/profile_images/1182025047751282688/RH5_t7Q1_400x400.jpg", userName: "Re0", message: "普通に考えてフラットラインはVK-47ですよね？同じ質問をみんなで何度もするなんて本当に無知なんだね？笑もっとAPEXの事ちゃんと調べた方がいいよ？何も知らないからR-301の事をカービンとか呼んでるんでしょ？無知って言われて必死に返事してくれてありがとうな？" })
-store.addMessage({ userHash: "27e98b679e16", userIcon: "https://pbs.twimg.com/profile_images/1657520359430828032/OJCGjE1B_400x400.jpg", userName: "♠️がぶりえる♠️", message: "所詮ゲームだしなぁ\n呼びやすい名でええやん〜" })
-store.addMessage({ userHash: "27e98b679e16", userIcon: "https://pbs.twimg.com/profile_images/1457660321095909376/1tSj8GNk_400x400.jpg", userName: "ﾌﾒｲ", message: "フラットラインのことVK-47って呼びますか？？https://pbs.twimg.com/media/Eqza98BUYAA5j07.jpg" })
-store.addMessage({ userHash: "27e98b679e16", userIcon: "https://pbs.twimg.com/profile_images/1182025047751282688/RH5_t7Q1_400x400.jpg", userName: "Re0", message: "フォーティーセブンって呼んでる" })
+store.addChannelList({
+  category: "chatApp",
+  data: [
+    { channelTitle: "お知らせ", channelIcon: "📢" },
+    { channelTitle: "オフ会", channelIcon: "🍕" },
+    { channelTitle: "雑談", channelIcon: "🎙️" },
+    { channelTitle: "開発日記", channelIcon: "✒️" },
+  ],
+});
 
-store.channelAbout.channelDescription = "ツゥーダァーンッッツ！！"
-store.channelAbout.channelIcon = store.header.channelIcon
-store.channelAbout.channelImageView = "https://iphone-mania.jp/wp-content/uploads/2018/07/MacBook-Pro-WP-1.png"
-store.channelAbout.channelTitle = store.header.channelTitle
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://tiniu.openkitchensmoy.repl.co/2.jpeg",
+  userName: "Re0",
+  message:
+    "R-301の事をカービンって言ってる奴は\nヘムロックをバーストARって言うんか？\nボルトSMGとR-99SMGとオルタネーターSMGは全部SMGって呼ぶんか？\nプラウラーをPDWって呼べるのか？\n\nそもそもカービンの意味を知ってるのか？\nDMRやスカウトの意味もわかるのか？って気持ちになるからカービン呼びは無知",
+});
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://tiniu.openkitchensmoy.repl.co/12.jpeg",
+  userName: "Re0",
+  message:
+    "普通に考えてフラットラインはVK-47ですよね？同じ質問をみんなで何度もするなんて本当に無知なんだね？笑もっとAPEXの事ちゃんと調べた方がいいよ？何も知らないからR-301の事をカービンとか呼んでるんでしょ？無知って言われて必死に返事してくれてありがとうな？",
+});
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://tiniu.openkitchensmoy.repl.co/1.jpeg",
+  userName: "♠️がぶりえる♠️",
+  message: "所詮ゲームだしなぁ\n呼びやすい名でええやん〜",
+});
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://tiniu.openkitchensmoy.repl.co/1.jpeg",
+  userName: "ﾌﾒｲ",
+  message:
+    "フラットラインのことVK-47って呼びますか？？https://pbs.twimg.com/media/Eqza98BUYAA5j07.jpg",
+});
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://tiniu.openkitchensmoy.repl.co/2.jpeg",
+  userName: "Re0",
+  message: "フォーティーセブンって呼んでる",
+});
+
+store.channelAbout.channelDescription = "ツゥーダァーンッッツ！！";
+store.channelAbout.channelIcon = store.header.channelIcon;
+store.channelAbout.channelImageView =
+  "https://iphone-mania.jp/wp-content/uploads/2018/07/MacBook-Pro-WP-1.png";
+store.channelAbout.channelTitle = store.header.channelTitle;
 </script>
 
 <template>
@@ -48,7 +77,7 @@ store.channelAbout.channelTitle = store.header.channelTitle
 </template>
 
 <style scoped>
-main{
+main {
   width: 100vw;
   height: 100vh;
 }
