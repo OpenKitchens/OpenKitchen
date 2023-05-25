@@ -63,6 +63,14 @@ store.addMessage({
   message: "フォーティーセブンって呼んでる",
 });
 
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://tiniu.openkitchensmoy.repl.co/4.jpeg",
+  userName: "Re0",
+  message: "https://www.apple.com/v/iphone-14/i/images/key-features/features/size/size_yellow__dnv9794q7loy_large_2x.jpg",
+});
+//
+
 store.channelAbout.channelDescription = "ツゥーダァーンッッツ！！";
 store.channelAbout.channelIcon = store.header.channelIcon;
 store.channelAbout.channelImageView =
