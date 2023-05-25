@@ -7,7 +7,7 @@ let data = store.mainView.message;
 function convertImageLinksToImgTags(text: string): string {
   const regex = /(https?:\/\/[^\s]+?\.(?:png|jpe?g))/g;
   const imgTag =
-    '<div style="width: 45vw;height: 25vw;background: url($1) left top / auto 100% no-repeat;margin-top: 15px;"></div>';
+    '<div style="width: 45vw;height: 25vw;background: #333 url($1) center center / auto 100% no-repeat;margin-top: 15px;border-radius: 10px"></div>';
   return text.replace(regex, imgTag);
 }
 </script>
