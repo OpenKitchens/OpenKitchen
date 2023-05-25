@@ -1,34 +1,40 @@
 <script setup lang="ts">
-import { usechatAppDataStore } from "@/stores/chatAppData"
-const store = usechatAppDataStore()
+import { usechatAppDataStore } from "@/stores/chatAppData";
+const store = usechatAppDataStore();
 
-let data = store.channelAbout
+let data = store.channelAbout;
 
-const channelImageView = `url(${data.channelImageView})`
+const channelImageView = `url(${data.channelImageView})`;
 </script>
 <template>
   <div class="main">
     <div class="about">
       <div class="text-container">
-        <div class="title"><span>{{ data.channelIcon }}</span>{{ data.channelTitle }}</div>
+        <div class="title">
+          <span>{{ data.channelIcon }}</span
+          >{{ data.channelTitle }}
+        </div>
         <div class="description">{{ data.channelDescription }}</div>
       </div>
     </div>
-    <div class="titleView"><span>{{ data.channelIcon }}</span>{{ data.channelTitle }}</div>
+    <div class="titleView">
+      <span>{{ data.channelIcon }}</span
+      >{{ data.channelTitle }}
+    </div>
     <div class="descriptionView">{{ data.channelDescription }}</div>
   </div>
 </template>
 
 <style scoped>
-.main{
+.main {
   width: 20vw;
   min-width: 250px;
   background-color: rgb(27, 27, 27);
   z-index: 2;
 }
-.about{
+.about {
   width: 100%;
-  height: 18%;
+  height: 25%;
   background-image: v-bind(channelImageView);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -42,7 +48,7 @@ const channelImageView = `url(${data.channelImageView})`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* 背景色を暗めに設定 */
+  background-color: rgba(0, 0, 0, 0.5); /* 背景色を暗めに設定 */
   z-index: 0; /* オーバーレイを背面に配置 */
 }
 .about .text-container {
@@ -53,17 +59,17 @@ const channelImageView = `url(${data.channelImageView})`
   text-align: center;
   width: 100%;
 }
-.title{
+.title {
   font-weight: bold;
   font-size: 20px;
 }
-.titleView{
+.titleView {
   color: #fff;
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0 0 10px;
 }
-.descriptionView{
+.descriptionView {
   margin: 0 0 10px 10px;
 }
 </style>
