@@ -31,44 +31,48 @@ store.addChannelList({
 
 store.addMessage({
   userHash: "27e98b679e16",
-  userIcon: "https://tiniu.openkitchensmoy.repl.co/2.jpeg",
-  userName: "Re0",
-  message:
-    "R-301の事をカービンって言ってる奴は\nヘムロックをバーストARって言うんか？\nボルトSMGとR-99SMGとオルタネーターSMGは全部SMGって呼ぶんか？\nプラウラーをPDWって呼べるのか？\n\nそもそもカービンの意味を知ってるのか？\nDMRやスカウトの意味もわかるのか？って気持ちになるからカービン呼びは無知",
-});
-store.addMessage({
-  userHash: "27e98b679e16",
-  userIcon: "https://tiniu.openkitchensmoy.repl.co/2.jpeg",
-  userName: "Re0",
-  message:
-    "普通に考えてフラットラインはVK-47ですよね？同じ質問をみんなで何度もするなんて本当に無知なんだね？笑もっとAPEXの事ちゃんと調べた方がいいよ？何も知らないからR-301の事をカービンとか呼んでるんでしょ？無知って言われて必死に返事してくれてありがとうな？",
-});
-store.addMessage({
-  userHash: "27e98b679e16",
-  userIcon: "https://tiniu.openkitchensmoy.repl.co/1.jpeg",
-  userName: "♠️がぶりえる♠️",
-  message: "所詮ゲームだしなぁ\n呼びやすい名でええやん〜",
-});
-store.addMessage({
-  userHash: "27e98b679e16",
-  userIcon: "https://tiniu.openkitchensmoy.repl.co/1.jpeg",
-  userName: "ﾌﾒｲ",
-  message:
-    "フラットラインのことVK-47って呼びますか？？https://tiniu.openkitchensmoy.repl.co/3.jpeg",
-});
-store.addMessage({
-  userHash: "27e98b679e16",
-  userIcon: "https://tiniu.openkitchensmoy.repl.co/2.jpeg",
-  userName: "Re0",
-  message: "フォーティーセブンって呼んでる",
-});
-
-store.addMessage({
-  userHash: "27e98b679e16",
-  userIcon: "https://tiniu.openkitchensmoy.repl.co/4.jpeg",
+  userIcon: "https://cdn.discordapp.com/icons/1075631274296873000/95353ce18e96bc4d972d24afb2fd2781.png?size=240",
   userName: "MOYASI",
   message:
-    "messageViewのテストhttps://www.apple.com/v/iphone-14/i/images/key-features/features/size/size_yellow__dnv9794q7loy_large_2x.jpg",
+    "コードレビューサンガツ",
+});
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://cdn.discordapp.com/icons/1052798548330168412/435596a8b1c5bcbfc0444447e1f54012.png?size=240",
+  userName: "samesan",
+  message:
+    "おん。まーじしてもいいんちゃう",
+});
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://cdn.discordapp.com/icons/1075631274296873000/95353ce18e96bc4d972d24afb2fd2781.png?size=240",
+  userName: "MOYASI",
+  message: "んじゃするわ。\nあとさ、GithubでJSが1割くらいあるんだけどTSで書いてないやつってある？https://i.imgur.com/CuO5pcV_d.webp?maxwidth=760&fidelity=grand",
+});
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://cdn.discordapp.com/icons/1052798548330168412/435596a8b1c5bcbfc0444447e1f54012.png?size=240",
+  userName: "samesan",
+  message:
+    "いやーやっぱJSで慣れてるからちょっとめんどくさいんだよね\nあと僕の環境が悪いのか知んないけどなんかTSが動かない時あるんだよね、、、",
+});
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://cdn.discordapp.com/icons/1075631274296873000/95353ce18e96bc4d972d24afb2fd2781.png?size=240",
+  userName: "MOYASI",
+  message: "まじか、https://zenn.dev/10_tofu_01/articles/6a9e3fb1eb7bd4 これとかどう",
+});
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://cdn.discordapp.com/icons/1052798548330168412/435596a8b1c5bcbfc0444447e1f54012.png?size=240",
+  userName: "samesan",
+  message: "https://w7.pngwing.com/pngs/595/279/png-transparent-vue-js-javascript-library-angularjs-react-vue-js-template-angle-text-thumbnail.png",
+});
+store.addMessage({
+  userHash: "27e98b679e16",
+  userIcon: "https://cdn.discordapp.com/icons/1075631274296873000/95353ce18e96bc4d972d24afb2fd2781.png?size=240",
+  userName: "MOYASI",
+  message: "どしたん?",
 });
 //
 

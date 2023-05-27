@@ -1,9 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+let icon = "/icon/paperplane.black.svg"
+if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+  icon = "/icon/paperplane.white.svg"
+}
+</script>
 <template>
   <div>
     <input class="textControl" />
     <button class="textSendButton">
-      <img src="/public/icon/paperplane.fill.svg" />
+      <img :src="icon" />
     </button>
   </div>
 </template>
