@@ -19,19 +19,21 @@ var data = store.header
 .wapper{
   width: 100%;
   height: 50px;
-  background-color: rgb(38, 38, 38);
+  background-color: rgb(244, 244, 244);
   display: flex;
   font-size: 1rem;
+  border-bottom: solid 1px rgb(231, 231, 231);
 }
 .instanceTitle{
   font-weight: bold;
-  color: #fff;
+  color: #000;
   margin: auto 30px;
   font-size: 1.2rem;
   width: 240px;
 }
 .instanceTitleWapper{
-  background-color: #242424;
+  background-color: rgb(244, 244, 244);
+  border-bottom: solid 1px rgb(231, 231, 231);
   width: 300px;
   height: 50px;
   display: flex;
@@ -48,10 +50,24 @@ var data = store.header
 }
 .channelTitle{
   margin: auto 10px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
 }
 .channelDescription{
   margin: auto 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wapper{
+    background-color: rgb(38, 38, 38);
+    border-bottom: none;
+  }
+  .instanceTitleWapper{
+    background-color: rgb(38, 38, 38);
+    border-bottom: none;
+  }
+  .instanceTitle, .channelTitle{
+    color: #fff;
+  }
 }
 </style>

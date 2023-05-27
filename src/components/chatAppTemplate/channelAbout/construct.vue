@@ -29,7 +29,7 @@ const channelImageView = `url(${data.channelImageView})`;
 .main {
   width: 20vw;
   min-width: 250px;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(235, 235, 235);
   z-index: 2;
 }
 .about {
@@ -64,12 +64,21 @@ const channelImageView = `url(${data.channelImageView})`;
   font-size: 20px;
 }
 .titleView {
-  color: #fff;
+  color: #000;
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0 0 10px;
 }
 .descriptionView {
   margin: 0 0 10px 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .main{
+    background-color: rgb(27, 27, 27);
+  }
+  .titleView{
+    color: #fff;
+  }
 }
 </style>

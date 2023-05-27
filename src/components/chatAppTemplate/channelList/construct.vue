@@ -19,7 +19,7 @@ const store = usechatAppDataStore()
 
 <style scoped>
 .channelList{
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(235, 235, 235);
   width: 20vw;
   min-width: 250px;
   height: 100%;
@@ -41,5 +41,22 @@ span{
 }
 .icon{
   margin: 0 5px;
+  color: #000;
+}
+.title{
+  color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  .channelList{
+    background-color: rgb(27, 27, 27);
+    color: #fff;
+  }
+  .icon{
+    color: #fff;
+  }
+  .title{
+    color: #fff;
+  }
 }
 </style>

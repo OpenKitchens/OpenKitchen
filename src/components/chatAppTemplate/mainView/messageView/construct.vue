@@ -7,7 +7,7 @@ let data = store.mainView.message;
 function convertImageLinksToImgTags(text: string): string {
   const regex = /(https?:\/\/[^\s]+?\.(?:png|jpe?g))/g;
   const imgTag =
-    '<div style="width: 45vw;height: 25vw;background: #333 url($1) center center / auto 100% no-repeat;margin-top: 15px;border-radius: 10px"></div>';
+    '<div style="width: 45vw;height: 25vw;background: rgba(57, 57, 57, 0.5) url($1) center center / auto 100% no-repeat;margin-top: 15px;border-radius: 10px"></div>';
   return text.replace(regex, imgTag);
 }
 </script>
@@ -51,13 +51,13 @@ img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  border: solid 2px #2e2e2e;
+  border: solid 2px #a8a8a8;
 }
 .wing {
   flex-direction: column;
 }
 .userName {
-  color: #fff;
+  color: #000;
   font-weight: bold;
   font-size: 17px;
   margin-left: 10px;
@@ -67,11 +67,22 @@ img {
   margin-left: 10px;
 }
 .message {
-  color: aliceblue;
+  color: #000;
   margin: 5px 0 20px 5px;
 }
 
 ::-webkit-scrollbar {
   width: 0;
+}
+@media (prefers-color-scheme: dark) {
+  img{
+    border: solid 2px #2e2e2e;
+  }
+  .userName{
+    color: #fff;
+  }
+  .message{
+    color: aliceblue;
+  }
 }
 </style>
