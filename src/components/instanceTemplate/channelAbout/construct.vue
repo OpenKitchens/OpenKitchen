@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { usechatAppDataStore } from "@/stores/chatAppData";
-const store = usechatAppDataStore();
+import { useInstanceDataStore } from "@/stores/instanceData";
+const store = useInstanceDataStore();
 
 let data = store.channelAbout;
 

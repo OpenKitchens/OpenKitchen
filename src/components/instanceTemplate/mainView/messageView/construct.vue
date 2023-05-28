@@ -1,27 +1,18 @@
 <script setup lang="ts">
-import { usechatAppDataStore } from "@/stores/chatAppData";
-const store = usechatAppDataStore();
+import { useInstanceDataStore } from "@/stores/instanceData";
+const store = useInstanceDataStore();
 
 let data = store.mainView.message;
-/*
-function convertImageLinksToImgTags(text: string): string {
-  const regex = /(https?:\/\/[^\s]+?\.(?:png|jpe?g))/g;
-  const imgTag =
-    '<div style="width: 45vw;height: 25vw;background: rgba(57, 57, 57, 0.5) url($1) center center / auto 100% no-repeat;margin-top: 15px;border-radius: 10px"></div>';
-  return text.replace(regex, imgTag);
-}*/
 
 function convertImageLinksToImgTags(text: string): string {
   // URLをリンク化する正規表現パターン
   const urlPattern = /(https?:\/\/\S+)/g;
-
   // 画像のURLを特定する正規表現パターン
   const imagePattern = /(https?:\/\/\S+\.(?:jpg|gif|png|webp))/g;
-
   return text.replace(urlPattern, (match, url) => {
     if (imagePattern.test(url)) {
       // 画像のURLの場合、画像タグに変換する
-      return `<img alt="画像" src="${url}" onload="resizeImage(this)" style="max-width: 100%; display: block;border-radius: 10px;">`;
+      return `<img alt="画像" src="${url}" onload="resizeImage(this)" style="max-width: 70%; display: block;border-radius: 10px;">`;
     } else {
       // リンクのURLの場合、リンクタグに変換する
       return `<a href="${url}">${url}</a>`;
@@ -30,8 +21,8 @@ function convertImageLinksToImgTags(text: string): string {
 }
 
 function resizeImage(image: HTMLImageElement) {
-  const maxWidth = 500; // 最大幅
-  const maxHeight = 500; // 最大高さ
+  const maxWidth = 400; // 最大幅
+  const maxHeight = 400; // 最大高さ
 
   const width = image.naturalWidth; // 画像の元の幅
   const height = image.naturalHeight; // 画像の元の高さ

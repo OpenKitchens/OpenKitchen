@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import chatAppTemplate from "../components/chatAppTemplate/construct.vue";
-import { usechatAppDataStore } from "../stores/chatAppData";
+import instanceTemplate from "../components/instanceTemplate/construct.vue";
+import { useInstanceDataStore } from "../stores/instanceData";
 
-const store = usechatAppDataStore();
+const store = useInstanceDataStore();
 
 store.header.instanceTitle = "OpenKitchen";
 store.header.channelIcon = "🎙️";
@@ -85,7 +85,7 @@ store.channelAbout.channelTitle = store.header.channelTitle;
 
 <template>
   <main>
-    <chatAppTemplate />
+    <instanceTemplate />
   </main>
 </template>
 

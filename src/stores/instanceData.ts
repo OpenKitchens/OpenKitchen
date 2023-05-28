@@ -18,7 +18,7 @@ interface Message {
 }
 
 
-export const usechatAppDataStore = defineStore("chatAppData", {
+export const useInstanceDataStore = defineStore("InstanceData", {
   state: () => ({
     header: {
       instanceTitle: "",
