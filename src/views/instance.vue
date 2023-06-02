@@ -74,7 +74,7 @@ store.addMessage({
   userName: "MOYASI",
   message: "どしたん?",
 });
-//
+//wakuwaku
 
 store.channelAbout.channelDescription = "ツゥーダァーンッッツ！！";
 store.channelAbout.channelIcon = store.header.channelIcon;
